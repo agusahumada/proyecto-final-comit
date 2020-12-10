@@ -8,6 +8,13 @@
   width: 95%;
 }
 
+@media (max-width: 1152px) {
+  .icons-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .icons-container2 {
   display: flex;
 }
@@ -35,18 +42,14 @@
   background-color: pink;
   color: #ffffff;
   text-align: center;
-  margin-top: 50px;
 }
 
 @media (max-width: 576px) {
   .background-pink {
     padding: 2rem 2rem;
   }
-  .image-jumbotron {
-    width: 100%;
-  }
   .white-restored {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -86,4 +89,40 @@
   font-family: "Raleway", sans-serif;
   padding-right: 100px;
   padding-left: 100px;
+}
+
+.contenedor-producto {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-productos {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.img-size {
+  max-width: 300px;
+  max-height: 300px;
+  align-self: center;
+}
+
+.card-title {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 10px;
+}
+
+.añadir-btn {
+  font-family: "Raleway", sans-serif;
+  align-self: center;
+}
+
+.container-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
