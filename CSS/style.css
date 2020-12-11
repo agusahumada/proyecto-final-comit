@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 
 /* Navbar icon styles */
+
+.title-font {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 .icons-container {
   display: flex;
   justify-content: space-between;
@@ -30,6 +37,11 @@
 
 .dropdown-text {
   text-align: center;
+  color: #000000;
+}
+
+.dropdown-text:hover {
+  color: #d87093;
 }
 
 .cart-text {
@@ -121,8 +133,100 @@
   align-self: center;
 }
 
+@media (max-width: 768px) {
+  .list-size {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-arrow {
+    top: 7px;
+  }
+}
+
 .container-contacto {
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 10px bold;
+  color: #000000;
+}
+
+.rosa {
+  background-color: #fad4db;
+}
+
+label {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  font-family: "Raleway", sans-serif;
+  font-size: smaller;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding-left: 50px;
+  padding-right: 100px;
+  font-size: small;
+  border: none;
+  border-bottom: #000000 solid 2px;
+}
+
+.container-input {
+  position: relative;
+}
+
+.btn-arrow {
+  border: none;
+  background-color: transparent;
+  border-bottom: #000000 solid 2px;
+  position: absolute;
+  right: 0px;
+  top: 8px;
+}
+
+.marca-font {
+  border: #000000 solid 1px;
+  width: max-content;
+  margin-left: 40px;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.icons-size {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-font {
+  font-family: "Architects Daughter", cursive;
+  color: #000000;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.footer-font:hover {
+  color: #d87093;
+}
+
+@media (max-width: 996px) {
+  .links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .footer-font {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
